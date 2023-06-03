@@ -1,0 +1,105 @@
+.nav-bar{
+    z-index: 100;
+    box-shadow: 3px 3px 14px 1px rgba(58, 58, 58, 0.203);
+    #mobile-logo{
+        display: none;
+        width: 50px;
+    }
+    nav{
+        display: block;
+        .inner-nav{
+            margin: 0px 8px;
+            font-size: larger;
+
+            .nav-li{
+                margin: 1px 8px;
+                padding: 0px 8px;
+                &:hover{
+                    
+                    background-color: #91bf76;
+                    color:#124574;
+                    // padding: 0px 8px;
+                    border-radius: 30px;
+                }
+                
+            }
+    }
+}
+    .hamburger-icon{
+        display: none;
+    }
+
+}
+
+@media (width<1000px) {
+    .nav-bar{
+        position: fixed;
+        width: 100vw;
+        height: auto;
+        min-height: auto;
+        background-color: #124574;
+        align-items: center;
+        
+        #mobile-logo{
+            display: block;
+            position: relative;
+            right:-20px;
+
+        }
+        #default-logo{
+            display: none;
+        }
+        nav{
+            .inner-nav{
+
+                display: none;
+            }
+        }
+        #envelope{
+            position: absolute;
+            left: 0;
+            margin: auto 0.7rem;
+        }
+        .mobile-show{
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0px;
+            padding:  10px;
+            transform: translateX(-20px);
+            background-color: aliceblue;
+            color: #124574;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 70%;
+            // transition: display 2s ease-in-out;
+            .inner-nav{
+                margin: auto 10px;
+                height: 50vh;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .nav-li{
+                    padding: auto 4px;
+
+                    &:hover{
+                        background-color: #91bf76;
+                        color: white;
+                        
+                    }
+                }
+                
+            }
+            }
+
+        .hamburger-icon{
+            position: absolute;
+            right: 0;
+            display: block;
+            margin: auto 0.7rem;
+        }
+    }
+    }

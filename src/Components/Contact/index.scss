@@ -1,0 +1,19 @@
+.form-container{
+    @media (width<1000px) {
+        flex-direction: column;
+    }
+}
+
+.contact-form{
+    @media (width<1000px) {
+        margin: 20px;
+        
+    }
+    .name-phone{
+        margin-top: 50px;
+        @media (width<1000px) {
+            flex-direction: column;
+            
+        }
+    }
+}

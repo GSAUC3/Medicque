@@ -1,0 +1,99 @@
+:root{
+    --bg-light-color-green: #91bf76;
+    --text-color-green: #3b6e40;
+}
+
+
+.main-header{
+    background-image: url('https://cdn.pixabay.com/photo/2021/10/11/17/37/doctor-6701410_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(88, 88, 88);
+    background-blend-mode: multiply;
+}
+
+.part1, .part2, .part3, .part4, .part5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.part1,.part3{
+
+    background-color:  rgba(167, 217, 139, 0.341);
+    color: var(--text-color-green);
+}
+.part1{
+    
+    img{
+    box-shadow: 1px 1px 20px 2px rgba(128, 128, 128, 0.429);
+}}
+.part2{
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 1px 5px 20px 5px rgba(128, 128, 128, 0.429);
+    }
+}
+ 
+.part3{
+    img{
+    width: 300px;
+    height: 280px;
+    border-radius: 100%;
+    
+    box-shadow: 1px 5px 20px 5px rgba(128, 128, 128, 0.429);
+ }
+}
+ 
+.part4{
+    height: 60vh;
+    color:white;
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/11/13/20/laptop-1385702_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(88, 88, 88);
+    background-blend-mode: multiply;
+}
+
+ @media (width<1000px) {
+    .main-header{
+        height: 60vh;
+        h1{
+            font-size: 30px;
+            
+        }
+    }
+    .part1{
+        padding: 40px;
+        
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        h2{
+            padding-bottom: 6px;
+            border-bottom: 3px solid green;
+            
+        }
+    }
+    .part2{
+        padding: 40px;
+        
+    }
+    .part3{
+        div{
+        padding: 40px;
+        flex-direction: column-reverse;
+        img{
+            margin-bottom:20px ;
+        }
+    }
+
+   
+}
+    
+ }

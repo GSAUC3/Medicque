@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import Contact from "../Contact";
-import Testimonials from "../Testimonials";
+import Testimonials from "../../Testimonials";
 
 const Home = () => {
   return (

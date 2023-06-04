@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
@@ -11,7 +11,8 @@ import Benefit from "./Components/Pages/Benefit";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
+      {/* change this to browserRouter at the time of actual deployement  */}
       <Routes>
         <Route path="/" element={<Layout logo={logo} />}>
           <Route index element={<Home />} />
@@ -22,7 +23,7 @@ function App() {
           <Route path="benefit" element={<Benefit />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

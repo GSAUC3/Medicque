@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/medicque/static/css/main.ca73f12f.css",
+    "main.js": "/medicque/static/js/main.7a34ee2e.js",
+    "static/js/787.dd120a54.chunk.js": "/medicque/static/js/787.dd120a54.chunk.js",
+    "static/media/6.png": "/medicque/static/media/6.085d4b9ae1e99af4258a.png",
+    "index.html": "/medicque/index.html",
+    "main.ca73f12f.css.map": "/medicque/static/css/main.ca73f12f.css.map",
+    "main.7a34ee2e.js.map": "/medicque/static/js/main.7a34ee2e.js.map",
+    "787.dd120a54.chunk.js.map": "/medicque/static/js/787.dd120a54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca73f12f.css",
+    "static/js/main.7a34ee2e.js"
+  ]
+}

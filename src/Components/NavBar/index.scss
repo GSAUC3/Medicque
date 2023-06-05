@@ -9,14 +9,17 @@
         display: block;
         .inner-nav{
             margin: 0px 8px;
-            font-size: larger;
 
             .nav-li{
                 margin: 1px 8px;
-                padding: 0px 8px;
+                padding: 7px 14px;
+                letter-spacing: 1px;
+                font-weight: 700 !important;
                 &:hover{
                     
-                    background-color: #91bf76;
+                    // background-color: #cafaad;
+                    background-color: #d8e4d0;
+                    // background-color: #cafaad;
                     color:#124574;
                     // padding: 0px 8px;
                     border-radius: 30px;

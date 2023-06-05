@@ -67,7 +67,7 @@ const Services = () => {
     <div>
       <div className="h-[70vh] flex items-center justify-center services-section1">
         <div className="text-white flex flex-col items-center justify-content gap-10">
-          <h1 className="text-5xl">OUR SERVICES</h1>
+          <h1 className="text-2xl lg:text-5xl">OUR SERVICES</h1>
           <p className="lg:w-[80%] text-center">
 
 
@@ -101,7 +101,7 @@ const Services = () => {
 
       <div className="flex items-center justify-center h-[60vh] service-last-section text-white">
         <div className="flex items-center justify-content flex-col">
-          <h1 className="text-5xl my-6 text-center">DISCOVER MEDICQUE</h1>
+          <h1 className="text-2xl lg:text-5xl my-6 text-center">DISCOVER MEDICQUE</h1>
           <p>UNLEASH YOUR SUPERPOWERS</p>
           <button className="py-4 px-8 mx-2 my-5 bg-[#91bf76] lg:text-lg text-white">
             BOOK A DEMO

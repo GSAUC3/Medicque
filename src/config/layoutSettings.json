@@ -1,0 +1,15 @@
+{
+    "colors": {
+        "pColorBlueDark": "#124574",
+        "pColorGreenLight": "#d8e4d0",
+        "buttonBgColor": "#91bf76"
+      },
+      "fontSize": {
+        "h1":"48px",
+        "h1Tailwind":"text-5xl",
+        "h2Tailwind":"text-3xl",
+        "h3Tailwind":"text-2xl"
+
+
+      }
+}

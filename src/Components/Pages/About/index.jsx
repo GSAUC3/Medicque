@@ -30,15 +30,15 @@ const About = () => {
   return (
     <div className="">
       <div className="about-content flex items-center justify-center text-white">
-        <div className="lg:w-[40%] text-justify absolute lg:right-10 p-20">
-          <h1 className="text-6xl lg:my-5 my-10 ">ABOUT</h1>
-          <p className="text-xl">
+        <div className=" lg:w-[40%] text-justify absolute lg:right-10 mx-5 lg:p-20 lg:text-xl">
+          <h1 className="text-2xl lg:text-5xl lg:my-5 my-10 max-[500px]:text-center font-bold">ABOUT US</h1>
+          <p>
             Medicque is a leading healthcare technology company dedicated to
             streamlining workflows, enhancing patient care, and improving
             practice management. Our cutting-edge software empowers doctors to
             focus on providing exceptional healthcare.
           </p>
-          <p className="text-xl">
+          <p>
             Our goal is to provide doctors with a seamless and user-friendly
             platform that saves time, improves efficiency, and ultimately
             enables them to deliver exceptional healthcare services to their
@@ -47,12 +47,12 @@ const About = () => {
         </div>
       </div>
       <div className="flex items-center flex-col justify-center text-center text-[#124574] py-16">
-        <div className=" lg:w-[80%] mx-4 ">
-          <p className="text-xl my-6 ">
+        <div className="lg:text-xl lg:w-[70%] mx-5 ">
+          <p className=" my-6 ">
             At Medicque, we are dedicated to revolutionizing healthcare
             technology for doctors.
           </p>
-          <p className="text-xl my-6">
+          <p className=" my-6">
             Our software empowers medical professionals by simplifying clinic
             management, streamlining workflows, and enhancing patient care. We
             believe that technology should be intuitive, efficient, and precise,
@@ -64,9 +64,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center flex-col justify-center text-justify bg-[#91bf766b] text-green-800 p-10">
-        <h1 className="text-4xl my-9">TEAM</h1>
-        <div className="flex  items-center justify-center gap-8 flex-wrap">
+      <div className="flex items-center flex-col justify-center text-justify bg-[#91bf766b] text-green-800 lg:p-10">
+        <h1 className="text-2xl lg:text-5xl my-9">TEAM</h1>
+        <div className="flex  items-center justify-center gap-8 flex-wrap mx-5">
           {team.map((item, i) => (
             <div className="lg:w-[300px] flex flex-col items-center my-6  h-[600px]  text-lg ">
               <img
@@ -75,7 +75,7 @@ const About = () => {
                 className="rounded-full"
                 style={{ width: "200px", height: "200px" }}
               />
-              <h2 className="font-bold text-xl my-5">{item.name}</h2>
+              <h2 className="font-bold lg:text-xl my-5">{item.name}</h2>
               <div>{item.role}</div>
               <div>{item.desc}</div>
             </div>
@@ -83,8 +83,8 @@ const About = () => {
         </div>
       </div>
       <div className="booking h-[60vh] p-10 flex flex-col items-center justify-center">
-        <h1 className="lg:text-6xl my-5">BOOK A DEMO</h1>
-        <p className="text-xl my-7 lg:w-[70%] text-center">
+        <h1 className="text-2xl lg:text-5xl my-5">BOOK A DEMO</h1>
+        <p className="lg:text-xl my-7 lg:w-[70%] text-center">
           Experience the power of our healthcare technology firsthand. Book a
           demo today and discover how Medicque can revolutionize your medical
           practice.

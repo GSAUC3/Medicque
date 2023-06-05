@@ -29,7 +29,7 @@
 }
     .comment{
         position: relative;
-        max-width: 60%;
+        // max-width: 60%;
         padding: 30px;
         text-align: justify;
         .context{
@@ -78,6 +78,14 @@
         width: 100%;
         // height: 100%;
     }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        // position: relative;
+        top: 160px;
+    //   visibility: hidden;
+    }
+    
 
   }
   
@@ -92,6 +100,7 @@
     align-items: center;
   }
   
+
 //   .swiper-slide img {
 //     display: block;
 //     width: 100%;

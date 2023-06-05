@@ -8,13 +8,15 @@ import Appointment from "./Components/Pages/Appoinment";
 import Contact from "./Components/Pages/Contact";
 import Services from "./Components/Pages/Services";
 import Benefit from "./Components/Pages/Benefit";
+import settings from './config/layoutSettings.json'
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout logo={logo} />}>
-          <Route index element={<Home />} />
+        <Route path='/' element={<Layout logo={logo}  />}>
+          <Route index element={<Home settings={settings}/>} />
           <Route path="about" element={<About />} />
           <Route path="appointment" element={<Appointment />} />
           <Route path="contact" element={<Contact />} />

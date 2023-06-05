@@ -3,11 +3,11 @@ import Map from "./Map";
 import Form from "./Form";
 import './index.scss';
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <div>
       <Map />
-      <h1 className="text-center text-5xl my-10">CONTACT</h1>
+      <h1 className={`text-center text-2xl lg:text-5xl my-10 text-[${props.textColor}]`}>CONTACT</h1>
       <div className="flex gap-2 form-container">
         <div className="flex flex-col justify-center items-center lg:w-[50%] text-xl">
           <p>Kolkata, West Bengal, India</p>

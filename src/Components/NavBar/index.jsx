@@ -48,7 +48,7 @@ const NavBar = (props) => {
         <img id="mobile-logo" src={props.logo} alt="" className="m-0 p-0" />
       </Link>
 
-      <div className="flex mx-5 items-center justify-center">
+      <div className="flex mx-5 items-center justify-center text-sm ">
         <nav className={showNav ? "mobile-show" : ""}>
           <div className="inner-nav m-0 p-0">
             <NavLink
@@ -89,6 +89,16 @@ const NavBar = (props) => {
               onClick={() => setShowNav(false)}
             >
               SERVICES
+            </NavLink>
+
+            <NavLink
+              className="nav-li"
+              exact="true"
+              activeClassName="active"
+              to="/benefit"
+              onClick={() => setShowNav(false)}
+            >
+              BENEFITS
             </NavLink>
 
             <NavLink

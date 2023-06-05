@@ -31,18 +31,12 @@
 }}
 .part2{
     img{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
         box-shadow: 1px 5px 20px 5px rgba(128, 128, 128, 0.429);
     }
 }
  
 .part3{
     img{
-    width: 300px;
-    height: 280px;
-    border-radius: 100%;
     
     box-shadow: 1px 5px 20px 5px rgba(128, 128, 128, 0.429);
  }
@@ -68,7 +62,6 @@
         }
     }
     .part1{
-        padding: 40px;
         
         img{
             width: 200px;
@@ -81,16 +74,16 @@
         }
     }
     .part2{
-        padding: 40px;
+        div{
+
+            flex-direction: column;
+        }
         
     }
     .part3{
         div{
-        padding: 40px;
         flex-direction: column-reverse;
-        img{
-            margin-bottom:20px ;
-        }
+        
     }
 
    

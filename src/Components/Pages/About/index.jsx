@@ -8,20 +8,20 @@ const defaultImageUrl =
 const team = [
   {
     name: "Priyanka Chakraborty",
-    image: "",
+    image: "https://static1.s123-cdn-static-a.com/uploads/8102986/400_6476e4e35f236.png",
     role: "Founder and CEO",
     desc: "Priyanka, the visionary founder of Medicque, combines legal expertise with a passion for healthcare technology. Her leadership drives innovation, bridging compliance and innovation to revolutionize healthcare and empower doctors and patients.",
   },
   {
     name: "ABC",
     image:
-      "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_640.png",
+      "",
     role: "Junior Software Developer",
     desc: "ABC, a skilled Junior Software Developer at Medicque, brings exceptional coding expertise and problem-solving skills. His dedication to writing clean, efficient code ensures reliable and high-performing healthcare technology software for our clients.",
   },
   {
     name: "Dr. Sombit Chowdhury",
-    image: "",
+    image: "https://static1.s123-cdn-static-a.com/uploads/8102986/400_647718c5a7458.jpg",
     role: "Domain Specialist",
     desc: "Sombit, an accomplished surgeon and Subject Matter Expert at Medicque, combines medical expertise with technical proficiency to drive our cutting-edge healthcare technology solutions.",
   },
@@ -44,8 +44,11 @@ const About = () => {
   return (
     <div className="">
       <div className="about-content flex items-center justify-center text-white">
-        <div className=" lg:w-[40%] text-justify absolute lg:right-10 mx-5 lg:p-20 lg:text-xl">
-          <h1 className="text-2xl lg:text-5xl animate lg:my-5 my-10 max-[500px]:text-center font-bold">ABOUT US</h1>
+        <div className=" lg:w-[40%] text-justify flex flex-col  absolute lg:right-20 mx-5 lg:p-20 lg:text-xl">
+          <h1 className="text-2xl lg:text-5xl animate max-[500px]:text-center font-bold lg:mt-[300px]">ABOUT US</h1>
+          
+          <hr className="border-2 border-[#91bf76] my-5 " />
+
           <p className="animate">
             Medicque is a leading healthcare technology company dedicated to
             streamlining workflows, enhancing patient care, and improving
@@ -78,18 +81,20 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center flex-col justify-center text-justify bg-[#91bf766b] text-green-800 lg:p-10">
-        <h1 className="text-2xl lg:text-5xl animate my-9">TEAM</h1>
-        <div className="flex  items-center justify-center gap-8 flex-wrap mx-5">
+      <div className="flex items-center flex-col justify-center text-justify bg-[#91bf766b] text-green-800 pb-10 lg:p-10">
+        <h1 className="text-2xl lg:text-5xl animate my-9 font-bold">TEAM</h1>
+        <div className="flex  items-center justify-center gap-8 flex-wrap my-6 mx-5">
           {team.map((item, i) => (
-            <div className="lg:w-[300px] animate flex flex-col items-center my-6  h-[600px]  text-lg ">
+            <div className="lg:w-[300px] animate flex flex-col items-center  lg:h-[600px]  lg:text-lg ">
               <img
                 src={item.image ? item.image : defaultImageUrl}
                 alt="dp"
-                className="rounded-full animate"
+                className="rounded-full animate object-cover"
                 style={{ width: "200px", height: "200px" }}
               />
-              <h2 className="font-bold lg:text-xl my-5">{item.name}</h2>
+              <h2 className="font-bold lg:text-xl mt-5">{item.name}</h2>
+              <hr className="border-2 border-[#91bf76] my-3 " />
+
               <div>{item.role}</div>
               <div>{item.desc}</div>
             </div>
@@ -97,8 +102,10 @@ const About = () => {
         </div>
       </div>
       <div className="booking h-[60vh] p-10 flex flex-col items-center justify-center">
-        <h1 className="text-2xl lg:text-5xl my-5 animate">BOOK A DEMO</h1>
-        <p className="lg:text-xl my-7 lg:w-[70%] text-center animate">
+        <h1 className="text-2xl lg:text-5xl font-bold animate">BOOK A DEMO</h1>
+        <hr className="border-2 border-[#91bf76] my-6" />
+
+        <p className="lg:text-xl lg:w-[70%] text-center animate">
           Experience the power of our healthcare technology firsthand. Book a
           demo today and discover how Medicque can revolutionize your medical
           practice.

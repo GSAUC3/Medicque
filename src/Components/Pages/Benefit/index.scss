@@ -6,4 +6,56 @@
     background-color: rgb(88, 88, 88);
     background-blend-mode: multiply;
     height: 100vh;
+    @media (width<1000px) {
+            height: 60vh;
+            
+        }
+    
+        .benefit-section-header{
+            @media (width<1000px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    
+    
+}
+
+.benefit-section-3{
+    background: url("https://cdn.pixabay.com/photo/2020/09/22/03/23/doctor-5591782_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(174, 174, 174);
+    background-blend-mode: multiply;
+
+    .inner-card{
+        position: absolute;
+        left: 0;
+        box-shadow: 2px 1px 14px 1px rgba(128, 128, 128, 0.34);
+        @media (width<1000px) {
+            text-align: center;            
+        }
+    }
+
+}
+.benefit-section-n{
+    background: url("https://cdn.pixabay.com/photo/2020/09/22/03/23/doctor-5591782_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(174, 174, 174);
+    background-blend-mode: multiply;
+
+    .inner-card{
+        position: absolute;
+        left: 0;
+        box-shadow: 2px 1px 14px 1px rgba(128, 128, 128, 0.34);
+        @media (width<1000px) {
+            text-align: center;    
+            position: relative;        
+        }
+    }
+    
 }

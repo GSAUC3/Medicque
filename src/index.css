@@ -8,6 +8,15 @@
   padding: 0;
 }
 
+hr {
+  clear:both;
+  display:block;
+  width: 100px;              
+  background-color:green;
+  color: blue;
+  height: 1px;
+}
+
 body {
   font-family: 'Comfortaa', cursive;
     -webkit-font-smoothing: antialiased;

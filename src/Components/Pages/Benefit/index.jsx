@@ -90,7 +90,8 @@ const midSections = [
       },
     ],
     bgColor:"#d8e4d0",
-    fgColor:"#3b6e40",
+    fgColor:"#ffffff",
+    // fgColor:"#3b6e40",
   },
 
   {
@@ -133,7 +134,7 @@ const component1 = (props, i) => {
           className=" w-[150px] h-[150px] animate"
         />
         <div className="flex flex-col">
-          <h2 className="text-2xl animate my-3 font-bold">{props.title}</h2>
+          <h2 className="text-2xl animate my-3 lg:font-bold">{props.title}</h2>
           <p className="animate">{props.desc}</p>
         </div>
       </div>
@@ -144,7 +145,7 @@ const component1 = (props, i) => {
 const component2 = (props) => {
   return (
     <>
-      <div className="flex flex-col items-center-justify-center  ">
+      <div className="flex flex-col items-center justify-center  ">
         <h2 className="text-2xl animate my-4">{props.title}</h2>
         <div className="animate">{props.desc}</div>
       </div>
@@ -170,9 +171,13 @@ const Benefit = () => {
     <>
       <div className="benefit-section-1 flex items-center justify-center text-white">
         <div className=" lg:w-[40%] text-justify absolute lg:left-10 mx-5 lg:p-20 lg:text-xl">
-          <h1 className="text-2xl lg:text-5xl animate lg:my-5 my-10 max-[500px]:text-center font-bold">
+          <h1 className="text-2xl lg:text-5xl animate lg:my-5  max-[500px]:text-center font-bold">
             BENEFITS
           </h1>
+          <div className="benefit-section-header">
+          <hr className="border-2 border-[#91bf76] my-5 " />
+          </div>
+
           <p className="animate">
             Experience streamlined healthcare management and improved patient
             care with Medicque's comprehensive and secure platform,
@@ -188,7 +193,8 @@ const Benefit = () => {
 
       <div className="benefit-section-2 container">
         <div className="lg:p-16 my-10 mx-5 flex flex-col  items-center justify-center ">
-          <h1 className="text-2xl lg:text-5xl my-5 animate">FEATURES</h1>
+          <h1 className="text-2xl lg:text-5xl  animate">FEATURES</h1>
+          <hr className="border-2 border-[#91bf76] my-5 " />
           <p className="text-center animate lg:w-[80%]">
             These prominent features of Medicque contribute to improved patient
             care, efficient clinic operations, and enhanced communication
@@ -200,24 +206,48 @@ const Benefit = () => {
         </div>
       </div>
 
+      <div className="container h-[50vh] benefit-section-3 flex items-center justify-center">
+        <div className="bg-[#d8e4d0] text-lime-800 lg:w-[450px] inner-card m-8 animate">
+            <div className="p-8 animate">
+            Medicque revolutionizes healthcare with enhanced efficiency, improved outcomes, secure data, streamlined operations, and comprehensive tools, optimizing patient care and experience.
+
+            </div>
+        </div>
+      </div>
+
       <div className="container">
         {midSections.map((item, i) => (
           <div
             k={i}
-            className={`bg-[${item.bgColor}] text-[${item.fgColor}] flex items-center justify-center lg:h-[70vh]`}
+            className={`bg-[${item.bgColor}] text-[${item.fgColor}] py-16 flex items-center  `}
           >
-            <div className="flex flex-col items-center justify-center gap-10 text-center">
-              <h1 className="text-2xl lg:text-5xl my-5 animate">
+            <div className="flex flex-col items-center justify-center gap-5 text-center">
+              <h1 className="text-2xl lg:text-5xl animate">
                 {item.title}
               </h1>
-              <div className="flex items-center-justify-center gap-10 lg:w-[70%] my-10 mx-5  max-[600px]:flex-col max-[600px]:text-center">
+              <hr className="border-2 border-[#91bf76] my-5 " />
+              <div className="flex items-center justify-center gap-10 lg:w-[70%]  mx-5 flex-wrap max-[600px]:flex-col max-[600px]:text-center">
                 {item.content.map((x, j) => (
-                  <div key={j}>{component2(x)}</div>
+                  <div key={j} className="animate lg:w-[30%] lg:h-[200px]">{component2(x)}</div>
                 ))}
               </div>
             </div>
           </div>
         ))}
+      </div>
+
+
+
+
+      
+      <div className="container h-[50vh] benefit-section-n flex items-center justify-center">
+        <div className="bg-[#d8e4d0] text-lime-800 lg:w-[650px] inner-card m-8 animate">
+            <div className="p-8 animate text-2xl font-bold lg:text-5xl">
+                  DON'T MISS OUT!
+            </div>
+            <button className="py-4 px-8 mx-8 my-5 bg-[#91bf76] lg:text-lg  animate text-white">BOOK A DEMO</button>
+
+        </div>
       </div>
     </>
   );

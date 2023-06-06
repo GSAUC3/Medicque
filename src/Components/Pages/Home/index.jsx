@@ -19,7 +19,7 @@ const Home = (props) => {
     <>
       <div className="main-header text-white w-[100vw] h-[90vh] flex flex-col items-center justify-center lg:text-xl p-2">
         <h1
-          className={`${props.settings.fontSize["h1Tailwind"]} m-5 font-bold`}
+          className={`text-2xl lg:text-5xl m-5 font-bold`}
         >
           MEDICQUE
         </h1>
@@ -50,10 +50,11 @@ const Home = (props) => {
         <div className="lg:w-[80%] flex flex-col lg:p-16 text-center items-center justify-center mx-5 my-10 gap-10">
           <img
             src="https://static1.s123-cdn-static-a.com/ready_uploads/media/39454/800_5ce21754cf173.jpg"
-            className="object-cover rounded-[50%] w-[200px] lg:w-[350px] h-[200px] lg:h-[350px]"
+            className="object-cover rounded-[50%] w-[250px] lg:w-[350px] h-[250px] lg:h-[350px] animate"
             alt=""
           />
-          <h2 className="m-3 text-2xl animate">EXPERIENCE THE FUTURE</h2>
+          <h2 className="mx-3 text-2xl animate">EXPERIENCE THE FUTURE</h2>
+          <hr className="border-2 border-[#91bf76] " />
           <p className="lg:text-xl text-justify animate">
             At Medicque, we believe that technology has the power to
             revolutionize healthcare. Our mission is to empower doctors with

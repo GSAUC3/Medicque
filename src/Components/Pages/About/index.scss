@@ -5,7 +5,16 @@
     background-size: cover;
     background-color: rgb(88, 88, 88);
     background-blend-mode: multiply;
-    height: 100vh;
+    height: 120vh;
+    @media (width<1000px) {
+        height: 70vh;
+    }
+    div{
+        @media (width<1000px) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 .booking{
     background: url("https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_1280.jpg");

@@ -1,36 +1,41 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import "./index.scss";
 
 const Appointment = () => {
   useEffect(() => {
-    ScrollReveal().reveal('.animate', {
-      delay:100,
-      easing:'ease-out',
-      interval:200,
-      origin:'bottom',
-      distance:'100px'
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 200,
+      origin: "bottom",
+      distance: "100px",
     });
   }, []);
-  
-
-
 
   return (
     <div>
-      <div className="dp-section1 flex flex-col items-center justify-center text-white h-[70vh]">
-        <h1 className="text-2xl lg:text-5xl animate">DOCTOR'S APPOINTMENT</h1>
-        <p className="my-5 w-[70%] text-center lg:text-lg animate">
-          Save time and streamline your healthcare experience with Medicque. Our
-          online booking platform allows you to find and book the perfect doctor
-          for your needs. Take the first step towards better health today!
-        </p>
+      <div className="dp-section1 flex items-center justify-center text-white h-[60vh] lg:h-[70vh]">
+        <div className="flex flex-col items-center justify-center mt-8">
+          <h1 className="text-2xl lg:text-5xl animate ">
+            DOCTOR'S APPOINTMENT
+          </h1>
+          <hr className="border-2 border-[#91bf76] my-8" />
+
+          <p className="w-[70%] text-center lg:text-lg animate">
+            Save time and streamline your healthcare experience with Medicque.
+            Our online booking platform allows you to find and book the perfect
+            doctor for your needs. Take the first step towards better health
+            today!
+          </p>
+        </div>
       </div>
 
       <div className="flex items-center justify-center text-center  text-[#124574] animate">
-        <div className="flex flex-col items-center justify-center h-[50vh] lg:h-[70vh] lg:w-[50%] my-10 mx-5animate">
-          <h1 className="text-2xl lg:text-5xl my-5animate">BOOK ONLINE</h1>
-          <div className="flex items-center justify-center flex-col gap-4">
+        <div className="flex flex-col items-center justify-center h-[50vh] lg:h-[70vh] lg:w-[50%] my-10 mx-5 animate">
+          <h1 className="text-2xl lg:text-5xl animate">BOOK ONLINE</h1>
+          <hr className="border-2 border-[#91bf76] my-8" />
+          <div className="flex items-center justify-center flex-col gap-4 mx-5">
             <p className="animate">
               Your health is important to us, and we want to make your life
               easier.

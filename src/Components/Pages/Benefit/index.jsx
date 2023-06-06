@@ -63,7 +63,7 @@ const midSections = [
       },
     ],
     bgColor: "",
-    fgColor: settings.colors.pColorBlueDark,
+    fgColor: 'text-['+settings.colors.pColorBlueDark+']',
   },
   {
     title: "DOCTOR'S ASSISTANT",
@@ -90,8 +90,7 @@ const midSections = [
       },
     ],
     bgColor:"#d8e4d0",
-    fgColor:"#ffffff",
-    // fgColor:"#3b6e40",
+    fgColor:"text-[#1f6925]",
   },
 
   {
@@ -119,7 +118,7 @@ const midSections = [
       },
     ],
     bgColor: "",
-    fgColor: settings.colors.pColorBlueDark,
+    fgColor: 'text-['+settings.colors.pColorBlueDark+']',
   },
 ];
 
@@ -127,7 +126,7 @@ const midSections = [
 const component1 = (props, i) => {
   return (
     <>
-      <div className="flex items-center text-[#124574] gap-8 justify-center max-[600px]:flex-col max-[600px]:text-center" key={i}>
+      <div className="flex items-center gap-8 justify-center max-[600px]:flex-col max-[600px]:text-center" key={i}>
         <img
           src={props.img}
           alt="icons"
@@ -171,7 +170,7 @@ const Benefit = () => {
     <>
       <div className="benefit-section-1 flex items-center justify-center text-white">
         <div className=" lg:w-[40%] text-justify absolute lg:left-10 mx-5 lg:p-20 lg:text-xl">
-          <h1 className="text-2xl lg:text-5xl animate lg:my-5  max-[500px]:text-center font-bold">
+          <h1 className="text-2xl lg:text-5xl animate lg:my-5  max-[600px]:text-center font-bold">
             BENEFITS
           </h1>
           <div className="benefit-section-header">
@@ -192,7 +191,7 @@ const Benefit = () => {
       </div>
 
       <div className="benefit-section-2 container">
-        <div className="lg:p-16 my-10 mx-5 flex flex-col  items-center justify-center ">
+        <div className="lg:p-16 my-10 mx-5 flex flex-col text-[#124574] items-center justify-center ">
           <h1 className="text-2xl lg:text-5xl  animate">FEATURES</h1>
           <hr className="border-2 border-[#91bf76] my-5 " />
           <p className="text-center animate lg:w-[80%]">
@@ -219,9 +218,9 @@ const Benefit = () => {
         {midSections.map((item, i) => (
           <div
             k={i}
-            className={`bg-[${item.bgColor}] text-[${item.fgColor}] py-16 flex items-center  `}
+            className={`bg-[${item.bgColor}]  py-16 flex items-center  `}
           >
-            <div className="flex flex-col items-center justify-center gap-5 text-center">
+            <div className={`flex flex-col items-center ${item.fgColor} justify-center gap-5 text-center`}>
               <h1 className="text-2xl lg:text-5xl animate">
                 {item.title}
               </h1>

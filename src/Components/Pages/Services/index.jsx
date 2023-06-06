@@ -57,7 +57,7 @@ const featureComponent = (props) => {
       <div
         className={`flex items-center justify-center gap-5 flex-col ${props.bgColor}  ${props.textColor} py-20 `}
       >
-        <h1 className="text-2xl font-bold lg:text-5xl animate">
+        <h1 className="text-2xl  lg:text-5xl animate">
           {props.heading}
         </h1>
         <hr className="border-2 border-[#91bf76] my-5 " />

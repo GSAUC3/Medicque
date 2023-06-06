@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import "./index.scss";
 
 const PREMIUM_FEATURES = [
@@ -46,14 +47,16 @@ const featureComponent = (props) => {
   return (
     <>
       <div
-        className={`flex items-center justify-center gap-10 flex-col ${props.bgColor}  ${props.textColor} py-20`}
+        className={`flex items-center justify-center gap-10 flex-col ${props.bgColor}  ${props.textColor} py-20 `}
       >
-        <h1 className="text-2xl font-bold lg:text-5xl">{props.heading}</h1>
-        <div className="flex justify-center text-center my-6 max-sm:flex-col max-sm:gap-8 ">
+        <h1 className="text-2xl font-bold lg:text-5xl animate">
+          {props.heading}
+        </h1>
+        <div className="flex justify-center text-center my-6 animate max-sm:flex-col max-sm:gap-8 ">
           {props.content.map((item, i) => (
             <div key={i} className="lg:w-[25%] mx-8">
-              <div className="text-lg font-bold">{item.title}</div>
-              <div className="text-lg">{item.desc}</div>
+              <div className="text-lg font-bold animate my-3">{item.title}</div>
+              <div className="text-lg animate">{item.desc}</div>
             </div>
           ))}
         </div>
@@ -63,14 +66,21 @@ const featureComponent = (props) => {
 };
 
 const Services = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 200,
+      origin: "bottom",
+      distance: "100px",
+    });
+  }, []);
   return (
     <div>
       <div className="h-[70vh] flex items-center justify-center services-section1">
-        <div className="text-white flex flex-col items-center justify-content gap-10">
-          <h1 className="text-2xl lg:text-5xl">OUR SERVICES</h1>
-          <p className="lg:w-[80%] text-center">
-
-
+        <div className="text-white flex flex-col items-center justify-content gap-10 mx-5">
+          <h1 className="text-2xl lg:text-5xl animate">OUR SERVICES</h1>
+          <p className="lg:w-[80%] text-center animate">
             Our comprehensive range of services includes efficient scheduling
             and appointment booking, comprehensive patient information
             management, enhanced prescription writing, graphical interpretations
@@ -101,9 +111,11 @@ const Services = () => {
 
       <div className="flex items-center justify-center h-[60vh] service-last-section text-white">
         <div className="flex items-center justify-content flex-col">
-          <h1 className="text-2xl lg:text-5xl my-6 text-center">DISCOVER MEDICQUE</h1>
-          <p>UNLEASH YOUR SUPERPOWERS</p>
-          <button className="py-4 px-8 mx-2 my-5 bg-[#91bf76] lg:text-lg text-white">
+          <h1 className="animate text-2xl lg:text-5xl my-6 text-center">
+            DISCOVER MEDICQUE
+          </h1>
+          <p className="animate">UNLEASH YOUR SUPERPOWERS</p>
+          <button className="animate py-4 px-8 mx-2 my-5 bg-[#91bf76] lg:text-lg text-white">
             BOOK A DEMO
           </button>
         </div>

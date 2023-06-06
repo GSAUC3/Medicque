@@ -2,6 +2,7 @@
     "colors": {
         "pColorBlueDark": "#124574",
         "pColorGreenLight": "#d8e4d0",
+        "pColorGreenDark":"#3b6e40",
         "buttonBgColor": "#91bf76"
       },
       "fontSize": {

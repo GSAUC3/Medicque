@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import Contact from "../Contact";
 import Testimonials from "../../Testimonials";
+import ScrollReveal from "scrollreveal";
 
 const Home = (props) => {
+  useEffect(() => {
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 200,
+      origin: "bottom",
+      distance: "100px",
+    });
+  }, []);
+
   return (
     <>
       <div className="main-header text-white w-[100vw] h-[90vh] flex flex-col items-center justify-center lg:text-xl p-2">
@@ -13,15 +24,15 @@ const Home = (props) => {
           MEDICQUE
         </h1>
 
-        <div className="text-center">
-          <div>Welcome to Medicque</div>
-          <div>
+        <div className="text-center animate">
+          <div className="aniamte">Welcome to Medicque</div>
+          <div className="animate">
             Empowering Doctors. Enhancing Patient Care. Revolutionizing
             Healthcare
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center animate">
           <button
             className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] lg:text-lg`}
           >
@@ -35,15 +46,15 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="part1 ">
+      <div className="part1 animate">
         <div className="lg:w-[80%] flex flex-col lg:p-16 text-center items-center justify-center mx-5 my-10 gap-10">
           <img
             src="https://static1.s123-cdn-static-a.com/ready_uploads/media/39454/800_5ce21754cf173.jpg"
             className="object-cover rounded-[50%] w-[200px] lg:w-[350px] h-[200px] lg:h-[350px]"
             alt=""
           />
-          <h2 className="m-3 text-2xl">EXPERIENCE THE FUTURE</h2>
-          <p className="lg:text-xl text-justify">
+          <h2 className="m-3 text-2xl animate">EXPERIENCE THE FUTURE</h2>
+          <p className="lg:text-xl text-justify animate">
             At Medicque, we believe that technology has the power to
             revolutionize healthcare. Our mission is to empower doctors with
             innovative tools and solutions that streamline their workflows,
@@ -55,16 +66,16 @@ const Home = (props) => {
       </div>
 
       <div
-        className={`part2 text-[${props.settings.colors.pColorBlueDark}] lg:p-16`}
+        className={`part2 text-[${props.settings.colors.pColorBlueDark}] lg:p-16 animate`}
       >
         <div className="lg:w-[80%]">
           <div className="flex lg:m-10 items-center text-justify justify-evenly gap-10 my-10 mx-5">
             <img
               src="https://static1.s123-cdn-static-a.com/uploads/8102986/800_6476e0e18b83a.jpg"
-              className="object-cover rounded-[50%] w-[250px] h-[250px] "
+              className="object-cover rounded-[50%] w-[250px] h-[250px] aniamte"
               alt=""
             />
-            <div className="lg:text-xl ">
+            <div className="lg:text-xl animate">
               Efficiency and convenience are at the core of our offerings. Our
               intuitive interface simplifies scheduling and appointment booking,
               eliminating the need for manual processes and juggling multiple
@@ -75,9 +86,9 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="part3 lg:p-16">
+      <div className="part3 lg:p-16 animate">
         <div className="lg:w-[80%]">
-          <div className="flex items-center text-justify justify-evenly gap-10 my-10 mx-5">
+          <div className="flex items-center text-justify justify-evenly gap-10 my-10 mx-5 animate">
             <p className="lg:text-xl">
               Say goodbye to stacks of paper forms and cumbersome patient
               information management. Our intelligent information intake system
@@ -89,15 +100,15 @@ const Home = (props) => {
             <img
               src="https://static1.s123-cdn-static-a.com/ready_uploads/media/5711412/800_5ef5f42400004.jpg"
               alt=""
-              className="object-cover rounded-[50%] w-[250px]  h-[250px]"
+              className="object-cover rounded-[50%] w-[250px]  h-[250px] animate"
             />
           </div>
         </div>
       </div>
 
-      <div className="part4 flex flex-col items-center text-center">
+      <div className="part4 flex flex-col items-center text-center animate">
         <h1
-          className={`text-2xl lg:${props.settings.fontSize.h1Tailwind} font-bold`}
+          className={`text-2xl lg:${props.settings.fontSize.h1Tailwind} font-bold animate`}
         >
           SCHEDULE A DEMO
         </h1>
@@ -105,7 +116,7 @@ const Home = (props) => {
         <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700 z-10 block" />
         <p>DOCTORS, TAKE ACTION NOW, DON'T WAIT ANY LONGER.</p>
 
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center animate">
           <button
             className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] lg:text-lg text-white `}
           >
@@ -119,16 +130,16 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="part5 flex-col gap-6 bg-[#91bf766b] text-green-800">
+      <div className="part5 flex-col gap-6 bg-[#91bf766b] text-green-800 animate">
         <h1
-          className={`text-2xl lg:${props.settings.fontSize.h1Tailwind} my-10 text-center`}
+          className={`text-2xl lg:${props.settings.fontSize.h1Tailwind} my-10 text-center aniamte`}
         >
           DOCTOR'S INSIGHTS
         </h1>
         <p className="lg:text-xl text-center">
           "Empowering Healthcare, Streamlining Success"
         </p>
-        <div className="container lg:w-[80%]">
+        <div className="container lg:w-[80%] animate">
           <Testimonials></Testimonials>
         </div>
       </div>

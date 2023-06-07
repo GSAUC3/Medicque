@@ -182,7 +182,7 @@ const Benefit = () => {
         </div>
       </div>
 
-      <div className="benefit-section-2 container">
+      <div className="benefit-section-2 ">
         <div className="lg:p-16 my-10 mx-5 flex flex-col text-[#124574] items-center justify-center ">
           <h1 className="text-2xl lg:text-5xl  animate">FEATURES</h1>
           <hr className="border-2 border-[#91bf76] bg-[#91bf76] w-[50px]  my-8 " />
@@ -197,7 +197,7 @@ const Benefit = () => {
         </div>
       </div>
 
-      <div className="container h-[50vh] benefit-section-3 flex items-center justify-center">
+      <div className="h-[50vh] benefit-section-3 flex items-center justify-center">
         <div className="bg-[#d8e4d0] text-lime-800 lg:w-[450px] inner-card m-8 animate">
             <div className="p-8 animate">
             Medicque revolutionizes healthcare with enhanced efficiency, improved outcomes, secure data, streamlined operations, and comprehensive tools, optimizing patient care and experience.
@@ -206,7 +206,7 @@ const Benefit = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="">
         {midSections.map((item, i) => (
           <div
             k={i}
@@ -231,7 +231,7 @@ const Benefit = () => {
 
 
       
-      <div className="container  h-[90vh] benefit-section-n flex lg:relative">
+      <div className=" h-[90vh] benefit-section-n flex lg:relative">
         <div className="bg-[#d8e4d0] text-lime-800 lg:w-[650px] inner-card animate lg:absolute lg:bottom-8  ">
             <div className="p-8 animate text-2xl font-bold lg:text-5xl">
                   DON'T MISS OUT!

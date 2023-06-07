@@ -1,17 +1,17 @@
-import React, { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+import React, {useEffect  } from "react";
+// import ScrollReveal from "scrollreveal";
+import { useLocation } from "react-router-dom";
 import "./index.scss";
 
+
 const Appointment = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    ScrollReveal().reveal(".animate", {
-      delay: 100,
-      easing: "ease-out",
-      interval: 200,
-      origin: "bottom",
-      distance: "100px",
-    });
-  }, []);
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
+
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Appointment = () => {
           <h1 className="text-2xl lg:text-5xl animate ">
             DOCTOR'S APPOINTMENT
           </h1>
-          <hr className="border-2 border-[#91bf76] my-8" />
+          <hr className="border-2 border-[#91bf76] my-8 bg-[#91bf76] " />
 
           <p className="w-[70%] text-center lg:text-lg animate">
             Save time and streamline your healthcare experience with Medicque.
@@ -32,10 +32,10 @@ const Appointment = () => {
       </div>
 
       <div className="flex items-center justify-center text-center  text-[#124574] animate">
-        <div className="flex flex-col items-center justify-center h-[50vh] lg:h-[70vh] lg:w-[50%] my-10 mx-5 animate">
+        <div className="flex flex-col items-center lg:text-xl justify-center h-[50vh] lg:h-[70vh] lg:w-[45%] my-10 mx-5 animate">
           <h1 className="text-2xl lg:text-5xl animate">BOOK ONLINE</h1>
-          <hr className="border-2 border-[#91bf76] my-8" />
-          <div className="flex items-center justify-center flex-col gap-4 mx-5">
+          <hr className="border-2 border-[#91bf76] my-8 bg-[#91bf76] " />
+          <div className="flex items-center justify-center flex-col gap-4 mx-5 mt-3">
             <p className="animate">
               Your health is important to us, and we want to make your life
               easier.
@@ -50,8 +50,8 @@ const Appointment = () => {
         </div>
       </div>
 
-      <div className="flex items-center lg:text-xl bg-[#91bf766b] text-green-800  text-center justify-center h-[50vh]">
-        <div className="flex flex-col items-center justify-center mx-5 my-10">
+      <div className="flex items-center lg:text-xl bg-[#E3EEDC] text-green-800   text-center justify-center h-[50vh] lg:h-[60vh]">
+        <div className="flex flex-col items-center justify-center mx-5 my-10 lg:w-[45%]">
           <p>Discover the freedom to choose your preferred doctor</p>
           <p className="m-4 animate">OR</p>
           <p className="animate">

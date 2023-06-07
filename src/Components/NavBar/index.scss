@@ -1,10 +1,15 @@
 .nav-bar{
-    z-index: 100;
-    box-shadow: 3px 3px 14px 1px rgba(58, 58, 58, 0.203);
+    z-index: 5;
+    box-shadow: 3px 3px 14px 5px rgba(58, 58, 58, 0.63);
     #mobile-logo{
         display: none;
         width: 50px;
     }
+    
+        .inner-nav-icons{
+            display: none;
+            margin-top: 100px;
+        }
     nav{
         display: block;
         .inner-nav{
@@ -25,14 +30,42 @@
                     border-radius: 30px;
                 }
                 
+                &.active{
+                    
+                    // background-color: #cafaad;
+                    background-color: #d8e4d0;
+                    // background-color: #cafaad;
+                    color:#124574;
+                    // padding: 0px 8px;
+                    border-radius: 30px;
+                }
+                
             }
     }
+    
+
+    
 }
     .hamburger-icon{
         display: none;
     }
 
 }
+
+.panel{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 1000;
+    position: fixed;
+    top:-120%;
+    transition: 0.5s;
+    &.active{
+        top:0;
+    }
+
+}
+
 
 @media (width<1000px) {
     .nav-bar{
@@ -43,6 +76,16 @@
         background-color: #124574;
         align-items: center;
         
+        .inner-nav-icons{
+            display: block;
+            border-top: 2px solid #91bf76;
+            padding-top: 30px;
+        }
+
+        .nav-icons{
+            display: none;
+        }
+
         #mobile-logo{
             display: block;
             position: relative;
@@ -77,8 +120,12 @@
             align-items: center;
             justify-content: center;
             min-width: 70%;
-            // transition: display 2s ease-in-out;
+            // transition: 0.5s;
+            
             .inner-nav{
+                .nav-icons{
+                    display: block;
+                }
                 margin: auto 10px;
                 height: 50vh;
                 display: flex;
@@ -93,6 +140,16 @@
                         color: white;
                         
                     }
+                    &.active{
+                    
+                        // background-color: #cafaad;
+                        background-color: #d8e4d0;
+                        // background-color: #cafaad;
+                        color:#124574;
+                        // padding: 0px 8px;
+                        border-radius: 30px;
+                    }
+                    
                 }
                 
             }

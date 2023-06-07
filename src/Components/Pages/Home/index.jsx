@@ -5,15 +5,15 @@ import Testimonials from "../../Testimonials";
 import ScrollReveal from "scrollreveal";
 
 const Home = (props) => {
-  useEffect(() => {
-    ScrollReveal().reveal(".animate", {
-      delay: 100,
-      easing: "ease-out",
-      interval: 200,
-      origin: "bottom",
-      distance: "100px",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ScrollReveal().reveal(".animate", {
+  //     delay: 100,
+  //     easing: "ease-out",
+  //     interval: 200,
+  //     origin: "bottom",
+  //     distance: "100px",
+  //   });
+  // }, []);
 
   return (
     <>
@@ -34,12 +34,12 @@ const Home = (props) => {
 
         <div className="flex flex-wrap items-center justify-center animate">
           <button
-            className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] lg:text-lg`}
+            className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] text-sm lg:text-lg`}
           >
             SCHEDULE A DOCTOR'S APPOINTMENT
           </button>
           <button
-            className={`py-4 mx-2 my-5 px-8 bg-[${props.settings.colors.buttonBgColor}] lg:text-lg`}
+            className={`py-4 mx-2 my-5 px-8 bg-[${props.settings.colors.buttonBgColor}] text-sm lg:text-lg`}
           >
             SCHEDULE A DEMO
           </button>
@@ -47,14 +47,14 @@ const Home = (props) => {
       </div>
 
       <div className="part1 animate">
-        <div className="lg:w-[80%] flex flex-col lg:p-16 text-center items-center justify-center mx-5 my-10 gap-10">
+        <div className="lg:w-[80%] flex flex-col lg:p-16 text-center items-center justify-center mx-5 my-10 gap-5">
           <img
             src="https://static1.s123-cdn-static-a.com/ready_uploads/media/39454/800_5ce21754cf173.jpg"
             className="object-cover rounded-[50%] w-[250px] lg:w-[350px] h-[250px] lg:h-[350px] animate"
             alt=""
           />
-          <h2 className="mx-3 text-2xl animate">EXPERIENCE THE FUTURE</h2>
-          <hr className="border-2 border-[#91bf76] " />
+          <h2 className="mt-6 text-2xl lg:text-3xl animate">EXPERIENCE THE FUTURE</h2>
+          <hr className="border-2 bg-[#91bf76] border-[#91bf76] " />
           <p className="lg:text-xl text-justify animate">
             At Medicque, we believe that technology has the power to
             revolutionize healthcare. Our mission is to empower doctors with
@@ -70,7 +70,7 @@ const Home = (props) => {
         className={`part2 text-[${props.settings.colors.pColorBlueDark}] lg:p-16 animate`}
       >
         <div className="lg:w-[80%]">
-          <div className="flex lg:m-10 items-center text-justify justify-evenly gap-10 my-10 mx-5">
+          <div className="flex lg:m-10 items-center text-center lg:text-left justify-evenly gap-10 my-10 mx-5">
             <img
               src="https://static1.s123-cdn-static-a.com/uploads/8102986/800_6476e0e18b83a.jpg"
               className="object-cover rounded-[50%] w-[250px] h-[250px] aniamte"
@@ -89,7 +89,7 @@ const Home = (props) => {
 
       <div className="part3 lg:p-16 animate">
         <div className="lg:w-[80%]">
-          <div className="flex items-center text-justify justify-evenly gap-10 my-10 mx-5 animate">
+          <div className="flex items-center text-center lg:text-right justify-evenly gap-10 my-10 mx-5 animate">
             <p className="lg:text-xl">
               Say goodbye to stacks of paper forms and cumbersome patient
               information management. Our intelligent information intake system
@@ -113,30 +113,32 @@ const Home = (props) => {
         >
           SCHEDULE A DEMO
         </h1>
+        <hr className="border-2  bg-[#91bf76] border-[#91bf76] my-8 " />
 
-        <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700 z-10 block" />
         <p>DOCTORS, TAKE ACTION NOW, DON'T WAIT ANY LONGER.</p>
 
         <div className="flex flex-wrap items-center justify-center animate">
           <button
-            className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] lg:text-lg text-white `}
+            className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] text-sm lg:text-lg text-white `}
           >
             SHEDULE A DEMO
           </button>
           <button
-            className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] lg:text-lg text-white`}
+            className={`py-4 px-8 mx-2 my-5 bg-[${props.settings.colors.buttonBgColor}] text-sm lg:text-lg text-white`}
           >
             CONTACT US
           </button>
         </div>
       </div>
 
-      <div className="part5 flex-col gap-6 bg-[#91bf766b] text-green-800 animate">
+      <div className="part5 flex-col gap-6 bg-[#E3EEDC] text-green-800 animate py-16 lg:h-[80vh]">
         <h1
-          className={`text-2xl lg:${props.settings.fontSize.h1Tailwind} my-10 text-center aniamte`}
+          className={`text-3xl   text-center aniamte`}
         >
           DOCTOR'S INSIGHTS
         </h1>
+        <hr className="border-2  bg-[#91bf76] border-[#91bf76] w-[50px]" />
+
         <p className="lg:text-xl text-center">
           "Empowering Healthcare, Streamlining Success"
         </p>

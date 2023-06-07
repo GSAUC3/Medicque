@@ -3,8 +3,9 @@ import './index.scss';
 
 
 const contactForm = (props) => {
+
   return (
-    <div className={props.class}>
+    <div className={`lg:w-[40%] mx-3 ${props.class}`}>
       <form className="contact-form">
         <div >
           <div className="flex gap-6 name-phone ">
@@ -43,7 +44,7 @@ const contactForm = (props) => {
               id='message'
               name="message"
               placeholder="Message"
-              rows='8'
+              rows='4'
               ></textarea>
           </div>
           <div className="mt-4">

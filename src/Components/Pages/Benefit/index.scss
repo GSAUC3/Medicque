@@ -49,12 +49,10 @@
     background-blend-mode: multiply;
 
     .inner-card{
-        position: absolute;
-        left: 0;
         box-shadow: 2px 1px 14px 1px rgba(128, 128, 128, 0.34);
         @media (width<1000px) {
-            text-align: center;    
-            position: relative;        
+            text-align: center; 
+            margin: auto auto 0px auto;  
         }
     }
     

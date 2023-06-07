@@ -2,6 +2,7 @@
     z-index: 0;
     @media (width<1000px) {
         flex-direction: column;
+        padding-top: 2rem;
         
     }
     .img{
@@ -30,8 +31,8 @@
     .comment{
         position: relative;
         // max-width: 60%;
-        padding: 30px;
-        text-align: justify;
+        padding:  30px;
+        text-align: left;
         .context{
             &::before{
                 content: open-quote;
@@ -39,18 +40,20 @@
                 color: white;
                 position: absolute;
                 top:-10px;
-            left: 0px;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        &::after{
-            content: close-quote;
-            position: absolute;
-            font-size: 4em;
-            color: white;
-            bottom: -20px;
-            right: 0px;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
+                color:#736e94;
+                left: 0px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            &::after{
+                content: close-quote;
+                position: absolute;
+                font-size: 4em;
+                color: white;
+                color:#736e94;
+                bottom: -20px;
+                right: 0px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
         }
     }
 }
@@ -82,7 +85,11 @@
     .swiper-button-prev,
     .swiper-button-next {
         // position: relative;
-        top: 160px;
+        top: 120px;
+        color: #736e94;
+        
+        // background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+
     //   visibility: hidden;
     }
     
@@ -91,7 +98,7 @@
   
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 17.5px;
     background: transparent;
   
     /* Center slide text vertically */

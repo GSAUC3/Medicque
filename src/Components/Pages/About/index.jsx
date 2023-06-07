@@ -1,5 +1,6 @@
 import React,{useEffect} from "react";
-import ScrollReveal from "scrollreveal";
+// import ScrollReveal from "scrollreveal";
+import { useLocation } from "react-router-dom";
 import "./index.scss";
 
 const defaultImageUrl =
@@ -28,26 +29,22 @@ const team = [
 ];
 
 const About = () => {
-
-
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    ScrollReveal().reveal('.animate', {
-      delay:100,
-      easing:'ease-out',
-      interval:200,
-      origin:'bottom',
-      distance:'100px'
-    });
-  }, []);
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
+
+
   
   return (
-    <div className="">
+    <div className="text-center">
       <div className="about-content flex items-center justify-center text-white">
-        <div className=" lg:w-[40%] text-justify flex flex-col  absolute lg:right-20 mx-5 lg:p-20 lg:text-xl">
-          <h1 className="text-2xl lg:text-5xl animate max-[500px]:text-center font-bold lg:mt-[300px]">ABOUT US</h1>
+        <div className=" lg:w-[45%]  flex flex-col lg:text-left absolute lg:right-[100px] mx-5 lg:p-20 lg:text-xl">
+          <h1 className="text-2xl lg:text-5xl animate max-[500px]:text-center font-medium lg:mt-[200px]">ABOUT US</h1>
           
-          <hr className="border-2 border-[#91bf76] my-5 " />
+          <hr className="border-2 border-[#91bf76] bg-[#91bf76] my-7 " />
 
           <p className="animate">
             Medicque is a leading healthcare technology company dedicated to
@@ -81,8 +78,10 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center flex-col justify-center text-justify bg-[#91bf766b] text-green-800 pb-10 lg:p-10">
-        <h1 className="text-2xl lg:text-5xl animate my-9 font-bold">TEAM</h1>
+      <div className="flex items-center flex-col justify-center text-center bg-[#E3EEDC] text-green-800 py-10 lg:p-10">
+        <h1 className="text-2xl lg:text-5xl animate  mt-16">TEAM</h1>
+          <hr className="border border-[#91bf76] bg-[#91bf76] my-9 w-[50px] " />
+
         <div className="flex  items-center justify-center gap-8 flex-wrap my-6 mx-5">
           {team.map((item, i) => (
             <div className="lg:w-[300px] animate flex flex-col items-center  lg:h-[600px]  lg:text-lg ">
@@ -92,8 +91,8 @@ const About = () => {
                 className="rounded-full animate object-cover"
                 style={{ width: "200px", height: "200px" }}
               />
-              <h2 className="font-bold lg:text-xl mt-5">{item.name}</h2>
-              <hr className="border-2 border-[#91bf76] my-3 " />
+              <h2 className=" lg:text-xl mt-5 font-bold">{item.name}</h2>
+              <hr className="border-2 border-[#91bf76] my-3 bg-[#91bf76]" />
 
               <div>{item.role}</div>
               <div>{item.desc}</div>
@@ -102,8 +101,8 @@ const About = () => {
         </div>
       </div>
       <div className="booking h-[60vh] p-10 flex flex-col items-center justify-center">
-        <h1 className="text-2xl lg:text-5xl font-bold animate">BOOK A DEMO</h1>
-        <hr className="border-2 border-[#91bf76] my-6" />
+        <h1 className="text-2xl lg:text-5xl  animate">BOOK A DEMO</h1>
+        <hr className="border-2 border-[#91bf76] bg-[#91bf76]  my-8" />
 
         <p className="lg:text-xl lg:w-[70%] text-center animate">
           Experience the power of our healthcare technology firsthand. Book a

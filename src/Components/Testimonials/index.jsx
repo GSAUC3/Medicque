@@ -42,7 +42,7 @@ const data = [
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col w-full my-7">
+    <div className="flex flex-col w-full">
       <Swiper
         cssMode={true}
         navigation={true}
@@ -51,6 +51,7 @@ const Testimonials = () => {
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
+        loop={true}
       >
         {data.map((item, i) => (
           <div key={i}>

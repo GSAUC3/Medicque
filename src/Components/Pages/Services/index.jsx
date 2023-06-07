@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+// import ScrollReveal from "scrollreveal";
 import "./index.scss";
+import { useLocation } from "react-router-dom";
+
 
 const PREMIUM_FEATURES = [
   {
@@ -52,6 +54,7 @@ const addOns = [
 ];
 
 const featureComponent = (props) => {
+  
   return (
     <>
       <div
@@ -60,7 +63,7 @@ const featureComponent = (props) => {
         <h1 className="text-2xl  lg:text-5xl animate">
           {props.heading}
         </h1>
-        <hr className="border-2 border-[#91bf76] my-5 " />
+        <hr className="bg-[#91bf76] border-2 border-[#91bf76] my-5 " />
 
         <div className="flex justify-center text-center animate max-sm:flex-col max-sm:gap-8">
           {props.content.map((item, i) => (
@@ -77,21 +80,20 @@ const featureComponent = (props) => {
 };
 
 const Services = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    ScrollReveal().reveal(".animate", {
-      delay: 100,
-      easing: "ease-out",
-      interval: 200,
-      origin: "bottom",
-      distance: "100px",
-    });
-  }, []);
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
+
+
   return (
     <div>
       <div className="h-[70vh] flex items-center justify-center services-section1">
-        <div className="text-white flex flex-col items-center justify-content gap-5 mx-5">
-          <h1 className="text-2xl lg:text-5xl animate">OUR SERVICES</h1>
-          <hr className="border-2 border-[#91bf76] my-5 " />
+        <div className="text-white flex flex-col items-center justify-content gap-5 m-8">
+          <h1 className="text-2xl lg:text-5xl animate mt-8">OUR SERVICES</h1>
+          <hr className="bg-[#91bf76] border-2 border-[#91bf76] my-5 " />
           <p className="lg:w-[80%] text-center animate">
             Our comprehensive range of services includes efficient scheduling
             and appointment booking, comprehensive patient information
@@ -121,12 +123,12 @@ const Services = () => {
         textColor: "text-[#124574]",
       })}
 
-      <div className="flex items-center justify-center h-[60vh] service-last-section text-white">
+      <div className="flex items-center justify-center h-[40vh] lg:h-[60vh] service-last-section text-white">
         <div className="flex items-center justify-content flex-col">
           <h1 className="animate text-2xl lg:text-5xl  text-center">
             DISCOVER MEDICQUE
           </h1>
-          <hr className="border-2 border-[#91bf76] my-5 " />
+          <hr className="bg-[#91bf76] border-2 border-[#91bf76] my-8" />
           <p className="animate">UNLEASH YOUR SUPERPOWERS</p>
           <button className="animate py-4 px-8 mx-2 my-5 bg-[#91bf76] lg:text-lg text-white">
             BOOK A DEMO

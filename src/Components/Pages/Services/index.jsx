@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-// import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 import "./index.scss";
 import { useLocation } from "react-router-dom";
 
@@ -86,7 +86,15 @@ const Services = () => {
     window.scrollTo(0, 0); // Scroll to top on route change
   }, [pathname]);
 
-
+  useEffect(() => {
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 100,
+      origin: "bottom",
+      distance: "100px",
+    });
+  }, []);
 
   return (
     <div>
@@ -113,7 +121,7 @@ const Services = () => {
       {featureComponent({
         heading: "PREMIUM FEATURES",
         content: PREMIUM_FEATURES,
-        bgColor: "bg-[#91bf766b]",
+        bgColor: "bg-[#E3EEDC]",
         textColor: "text-green-800",
       })}
 

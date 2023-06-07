@@ -1,5 +1,5 @@
 import React, {useEffect  } from "react";
-// import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 import { useLocation } from "react-router-dom";
 import "./index.scss";
 
@@ -11,6 +11,15 @@ const Appointment = () => {
     window.scrollTo(0, 0); // Scroll to top on route change
   }, [pathname]);
 
+  useEffect(() => {
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 100,
+      origin: "bottom",
+      distance: "100px",
+    });
+  }, []);
 
 
   return (

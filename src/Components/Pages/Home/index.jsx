@@ -1,18 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./index.scss";
 import Contact from "../Contact";
 import Testimonials from "../../Testimonials";
 
+import ScrollReveal from "scrollreveal";
+
 const Home = (props) => {
-  // useEffect(() => {
-  //   ScrollReveal().reveal(".animate", {
-  //     delay: 100,
-  //     easing: "ease-out",
-  //     interval: 200,
-  //     origin: "bottom",
-  //     distance: "100px",
-  //   });
-  // }, []);
+  useEffect(() => {
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 100,
+      origin: "bottom",
+      distance: "100px",
+    });
+  }, []);
 
   return (
     <>
@@ -130,7 +132,7 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="part5 flex-col gap-6 bg-[#E3EEDC] text-green-800 animate py-16 lg:h-[80vh]">
+      <div className="part5 flex-col gap-6 bg-[#E3EEDC] text-[#3b6e40] animate py-16 lg:h-[80vh]">
         <h1
           className={`text-3xl   text-center aniamte`}
         >

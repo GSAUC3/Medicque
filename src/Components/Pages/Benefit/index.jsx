@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import "./index.scss";
 import settings from "../../../config/layoutSettings.json";
 import { useLocation } from "react-router-dom";
-// import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 
 
 const data1 = [
@@ -161,7 +161,15 @@ const Benefit = () => {
     window.scrollTo(0, 0); // Scroll to top on route change
   }, [pathname]);
 
-
+  useEffect(() => {
+    ScrollReveal().reveal(".animate", {
+      delay: 100,
+      easing: "ease-out",
+      interval: 100,
+      origin: "bottom",
+      distance: "100px",
+    });
+  }, []);
 
  
 
@@ -205,7 +213,7 @@ const Benefit = () => {
       </div>
 
       <div className="h-[50vh] benefit-section-3 flex items-center justify-center">
-        <div className="bg-[#d8e4d0] text-lime-800 lg:w-[450px] inner-card m-8 animate">
+        <div className="bg-[#E3EEDC] text-lime-800 lg:w-[450px] inner-card m-8 animate">
             <div className="p-8 animate">
             Medicque revolutionizes healthcare with enhanced efficiency, improved outcomes, secure data, streamlined operations, and comprehensive tools, optimizing patient care and experience.
 
@@ -239,7 +247,7 @@ const Benefit = () => {
 
       
       <div className=" h-[90vh] benefit-section-n flex lg:relative">
-        <div className="bg-[#d8e4d0] text-lime-800 lg:w-[650px] inner-card animate lg:absolute lg:bottom-8  ">
+        <div className="bg-[#E3EEDC] text-[#3b6e40] lg:w-[650px] inner-card animate lg:absolute lg:bottom-8  ">
             <div className="p-8 animate text-2xl font-bold lg:text-5xl">
                   DON'T MISS OUT!
             </div>

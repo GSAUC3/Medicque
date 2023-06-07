@@ -24,7 +24,7 @@ const Appointment = () => {
 
   return (
     <div>
-      <div className="dp-section1 flex items-center justify-center text-white h-[60vh] lg:h-[70vh]">
+      <div className="dp-section1 bg-fixed flex items-center justify-center text-white h-[60vh] lg:h-[70vh]">
         <div className="flex flex-col items-center justify-center mt-8">
           <h1 className="text-2xl lg:text-5xl animate ">
             DOCTOR'S APPOINTMENT

@@ -48,7 +48,7 @@ const About = () => {
   
   return (
     <div className="text-center">
-      <div className="about-content flex items-center justify-center text-white">
+      <div className="about-content flex items-center justify-center text-white ">
         <div className=" lg:w-[45%]  flex flex-col lg:text-left absolute lg:right-[100px] mx-5 lg:p-20 lg:text-xl">
           <h1 className="text-2xl lg:text-5xl animate max-[500px]:text-center font-medium lg:mt-[200px]">ABOUT US</h1>
           

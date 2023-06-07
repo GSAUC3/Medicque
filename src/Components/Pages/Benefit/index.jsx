@@ -90,7 +90,7 @@ const midSections = [
         desc: "Trust in the highest standards of privacy and data security.",
       },
     ],
-    bgColor:"#d8e4d0",
+    bgColor:"bg-[#E3EEDC]",
     fgColor:"text-[#1f6925]",
   },
 
@@ -225,7 +225,7 @@ const Benefit = () => {
         {midSections.map((item, i) => (
           <div
             k={i}
-            className={`bg-[${item.bgColor}]  py-16 flex items-center  `}
+            className={`${item.bgColor}  py-16 flex items-center  `}
           >
             <div className={`flex flex-col items-center ${item.fgColor} justify-center gap-5 text-center`}>
               <h1 className="text-2xl lg:text-5xl animate">

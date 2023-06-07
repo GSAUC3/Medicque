@@ -18,7 +18,7 @@ const Home = (props) => {
 
   return (
     <>
-      <div className="main-header text-white w-[100vw] h-[90vh] flex flex-col items-center justify-center lg:text-xl p-2">
+      <div className="main-header text-white w-[100vw] h-[90vh] flex flex-col bg-fixed items-center justify-center lg:text-xl p-2">
         <h1
           className={`text-2xl lg:text-5xl m-5 font-bold`}
         >
@@ -108,7 +108,7 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="part4 flex flex-col items-center text-center animate">
+      <div className="part4 flex flex-col items-center text-center  bg-fixed bg-center bg-cover">
         <h1
           className={`text-2xl lg:${props.settings.fontSize.h1Tailwind} font-bold animate`}
         >

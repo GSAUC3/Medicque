@@ -5,6 +5,8 @@
     background-size: cover;
     background-color: rgb(88, 88, 88);
     background-blend-mode: multiply;
+    background-attachment: fixed;
+
     height: 100vh;
     @media (width<1000px) {
             height: 60vh;
@@ -29,6 +31,7 @@
     background-size: cover;
     background-color: rgb(174, 174, 174);
     background-blend-mode: multiply;
+    background-attachment: fixed;
 
     .inner-card{
         position: absolute;
@@ -47,6 +50,7 @@
     background-size: cover;
     background-color: rgb(174, 174, 174);
     background-blend-mode: multiply;
+    background-attachment: fixed;
 
     .inner-card{
         box-shadow: 2px 1px 14px 1px rgba(128, 128, 128, 0.34);

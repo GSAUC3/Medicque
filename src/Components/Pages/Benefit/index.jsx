@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
 import "./index.scss";
 import settings from "../../../config/layoutSettings.json";
-import ScrollReveal from "scrollreveal";
+import { useLocation } from "react-router-dom";
+// import ScrollReveal from "scrollreveal";
 
 
 const data1 = [
@@ -154,6 +155,12 @@ const component2 = (props) => {
 
 
 const Benefit = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
 
 
  

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import "./index.scss";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import {
@@ -207,7 +207,7 @@ const NavBar = (props) => {
 
       <div
         className={`panel flex items-center flex-col  justify-center   text-white ${
-          isOpen == true ? "active" : ""
+          isOpen === true ? "active" : ""
         }`}
       >
         <FontAwesomeIcon
@@ -232,7 +232,7 @@ const NavBar = (props) => {
 
       <div
         className={`panel flex items-center flex-col  justify-center   text-white ${
-          isOpen1 == true ? "active" : ""
+          isOpen1 === true ? "active" : ""
         }`}
       >
         <FontAwesomeIcon
@@ -255,8 +255,8 @@ const NavBar = (props) => {
       </div>
 
       <div
-        className={`panel flex items-center flex-col  justify-center   ${
-          isOpen2 == true ? "active" : ""
+        className={`panel flex items-center flex-col  justify-center px-3  ${
+          isOpen2 === true ? "active" : ""
         }`}
       >
         <FontAwesomeIcon
@@ -265,7 +265,7 @@ const NavBar = (props) => {
           className="absolute top-5 right-8 cursor-pointer text-white hover:text-[#91bf76]"
           onClick={TogglePannel2}
         />
-        <div className="text-left   lg:w-[40%] text-white">
+        <div className="text-left  lg:w-[40%] text-white">
           <p className=" text-2xl">Contact Us</p>
           <p className="mb-8 mt-3">
             Fill out the form or send a direct email to:

@@ -3,6 +3,93 @@
 @tailwind utilities;
 
 
+
+:root {
+  --global_main_color: #91bf76;
+  --global_main_color_btn_text_color: #ffffff;
+  --home_text_color: #ffffff;
+  --home_third_background_color: #000000;
+  --menu_thin_border: #124574;
+  --mobileMenuTextAlign: center;
+  --menu_text_color: #ffffff;
+  --menu_text_hover_color: #d8e4d0;
+  --menu_color: #124574;
+  --modules_color_text: #3b6e40;
+  --modules_color_text_second: #124574;
+  --inside_modules_color_text: #736e94;
+  --modules_color_second: #ffffff;
+  --modules_color: #e3eedc;
+  --footer_back: #124574;
+  --footer_text_hover: #91bf76;
+  --footer_links_color: #91bf76;
+  --footer_text: #ffffff;
+  --home_background_color: #000000;
+  --inside_modules_color_box: #ffffff;
+  --inside_modules_color_text_box: #736e94;
+  --module_separate_border_color: #d8e4d0;
+  --modules_color_box: #e3eedc;
+  --modules_color_second_box: #ffffff;
+  --modules_color_text_second_box: #124574;
+  --inside_modules_color: #ffffff;
+  --modules_color_text_box: #3b6e40;
+
+  --sectionsPadding: 100px;
+  --home_text_top_space_1: 0px;
+  --home_text_bottom_space_1: 16px;
+  --home_text_top_space_2: 0px;
+  --home_text_bottom_space_2: 30px;
+  --home_text_top_space_3: 0px;
+  --home_text_bottom_space_3: 31px;
+  --homepage_padding_top: px;
+  --homepage_padding_bottom: px;
+  --homepage_main_goal_margin_top: 0px;
+  --homepage_main_goal_margin_bottom: 0px;
+  --homepage_second_goal_margin_top: 0px;
+  --homepage_second_goal_margin_bottom: 0px;
+  --font_logo: Comfortaa;
+  --font_menu: Comfortaa;
+  --global_font: Comfortaa;
+  --font_slogan: Comfortaa;
+  --font_slogan_2: Comfortaa;
+  --font_second_slogan: Comfortaa;
+  --font_modules_header: Comfortaa;
+  --sticky_menu: 1;
+  --scrollHeaderSize: 0px;
+  --home_custom_image_size: px;
+  --home_custom_image_width: px;
+  --home_text_size_px: 70px;
+  --home_text_size_2_px: 45px;
+  --slogan_text_size_px: 22px;
+  --home_text_size: 70;
+  --home_text_size_2: 45;
+  --slogan_text_size: 22;
+  --home_text_size_px_media: 70px;
+  --home_text_size_2_px_media: 45px;
+  --slogan_text_size_px_media: 22px;
+  --layout_text_align: center;
+  --layout_text_align_rtl: center;
+  --layout_text_box_width: 100%;
+  --layout_left_side_width: 50%;
+  --layout_left_side_width_vh: 50vh;
+  --homepage_layout_height: 75%;
+  --homepage_layout_height_vh: 75vh;
+  --homepage_layout_height_menu_space: 0px;
+  --mainNavMobileHeight: 0px;
+  --homepage_layout_height_opacity_space_top: 0px;
+  --homepage_layout_height_opacity_space_bottom: 0px;
+  --mobileMenuFontSize: 20px;
+  --mobileMenuPagesSpace: 5px;
+  --homepageShapeDividerList_Size: 17%;
+  --layout_bottom_spacing: 0px;
+  --window-height: 100vh;
+  --window-width: 100vw;
+  --menu_font_size: 15px;
+  --menu_pages_space: 4px;
+  --menu_pages_side_padding: 15px;
+  --menu_pages_letter_spacing: 0.5px;
+  --menu_pages_word_spacing: 0px;
+}
+
 *{
   margin: 0;
   padding: 0;

@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./index.scss";
 import Contact from "../Contact";
 import Testimonials from "../../Testimonials";
-import ScrollReveal from "scrollreveal";
 
 const Home = (props) => {
   // useEffect(() => {
@@ -55,7 +54,7 @@ const Home = (props) => {
           />
           <h2 className="mt-6 text-2xl lg:text-3xl animate">EXPERIENCE THE FUTURE</h2>
           <hr className="border-2 bg-[#91bf76] border-[#91bf76] " />
-          <p className="lg:text-xl text-justify animate">
+          <p className="lg:text-xl text-center animate">
             At Medicque, we believe that technology has the power to
             revolutionize healthcare. Our mission is to empower doctors with
             innovative tools and solutions that streamline their workflows,
